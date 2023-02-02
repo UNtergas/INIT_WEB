@@ -1,0 +1,22 @@
+<!---create simple css for the below page-->
+<html>
+  <head>
+    <title>Input Box and Console</title>
+    <link rel="style" href="test.css">
+  </head>
+  <body>
+    <input type="text" id="inputbox" />
+    <div id="console"></div>
+
+    <script type="text/javascript">
+      document.getElementById('inputbox').addEventListener('keyup', function(e) {
+        document.getElementById('console').innerHTML = e.target.value;
+
+      });
+    </script>
+    <button name="button" id="ngusi">PRESS</button>
+    <button  id="reset">RESET</button>
+    <script src="test.js"></script>
+
+  </body>
+</html>
