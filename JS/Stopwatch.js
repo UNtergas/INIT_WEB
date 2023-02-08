@@ -44,7 +44,7 @@ class Stopwatch {
             if (this.interval) {
                 clearInterval(this.interval);
                 this.interval = null;
-                alert("Time stopped at " + stopwatch.formatTime(this.value));
+                alert("Time stopped at " + this.formatTime(this.value));
             }
         }
     }
